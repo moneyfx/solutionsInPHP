@@ -14,14 +14,8 @@
 function urlify($str, $len)
 {
 	$lengthOfString = strlen($str);
-	$locationOfLastChar = 0;
+	$locationOfLastChar = $len - 1;
 	$locationOfCursor = $lengthOfString - 1;
-
-	for ($i = 0; $i < $lengthOfString; $i++) {
-		if ($str[$i] != ' ') {
-			$locationOfLastChar = $i;
-		}
-	}
 
 	for ($i = $locationOfLastChar; $i >= 0; $i--) {
 		$currentChar = $str[$i];
