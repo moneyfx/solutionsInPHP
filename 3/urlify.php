@@ -13,9 +13,9 @@
 */
 function urlify($str, $len)
 {
-	$lengthOfString 		= strlen($str);
-	$locationOfLastChar 	= 0;
-	$locationOfCursor 		= $lengthOfString - 1;
+	$lengthOfString = strlen($str);
+	$locationOfLastChar = 0;
+	$locationOfCursor = $lengthOfString - 1;
 
 	for ($i = 0; $i < $lengthOfString; $i++) {
 		if ($str[$i] != ' ') {
@@ -29,7 +29,7 @@ function urlify($str, $len)
 			$str[$locationOfCursor] = $currentChar;
 			$locationOfCursor--;
 		} else {
-			$str[$locationOfCursor] 	= '0';
+			$str[$locationOfCursor] = '0';
 			$str[$locationOfCursor - 1] = '2';
 			$str[$locationOfCursor - 2] = '%';
 			$locationOfCursor -= 3;
