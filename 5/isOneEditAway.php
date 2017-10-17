@@ -20,7 +20,7 @@ function isOneEditAway($str1, $str2)
 		$str2 = $tmp;
 	}
 
-	$hm = array();
+	$hm = [];
 
 	for ($i = 0; $i < strlen($str1); $i++) {
 		$currentChar = $str1[$i];
