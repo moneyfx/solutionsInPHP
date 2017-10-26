@@ -19,3 +19,4 @@ echo PHP_EOL;
 
 $d = $c - 0.3; // close to 0
 var_dump($d);
+die();
