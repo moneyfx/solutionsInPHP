@@ -9,8 +9,8 @@ $b = 0.7;
 $c = $a - $b;// close to 0.3 
 var_dump($c);
 
-//use following instead of ($c == 0.3)
-if (abs($c - 0.3) < 0.00001) {
+// use following instead of ($c == 0.3) - floats are not absolutely-precise
+if ((string) $c === (string) 0.3) {
     echo 'equal';
 } else {
     echo 'not equal';
