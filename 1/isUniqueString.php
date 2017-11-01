@@ -22,8 +22,10 @@ function isUniqueString($str)
 	return true;
 }
 
+// failure case
 $test1 = isUniqueString('test');
 var_dump($test1);
 
+// success case
 $test2 = isUniqueString('mani');
 var_dump($test2);
